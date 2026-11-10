@@ -15,6 +15,23 @@
   <link rel="preload" href="assets/fonts/Spectral-Regular.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="assets/fonts/IBMPlexSans-Medium.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Remerciements — s'appuie sur .head, .indent et .prose de style.css */
+    .merci .prose p { hyphens: auto; }
+    .merci .prose p.merci__envoi {
+      text-indent: 0;
+      margin: 1.75em 0 0;
+      font-style: italic;
+    }
+    .merci__envoi::before {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 1px;
+      background: var(--ink);
+      margin-bottom: 1.25rem;
+    }
+  </style>
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
@@ -47,6 +64,20 @@
     </div>
   </div>
 </header>
+
+<section id="remerciements" class="merci" aria-labelledby="merci-titre">
+  <div class="wrap">
+    <div class="head"><span class="head__num" aria-hidden="true">—</span><h2 id="merci-titre">Remerciements</h2></div>
+    <div class="indent">
+      <div class="prose">
+        <p>Je tiens avant tout à remercier ma tutrice de mémoire, Jeanne Etelain, qui a su dès le début me mettre sur les bons rails et m’a permis d’appréhender la continuité historique et idéologique du capitalisme. Sa relecture attentive et critique m’a poussée à produire un travail de recherche sérieux et argumenté. Merci, Jeanne, pour ta rigueur et ta bienveillance.</p>
+        <p>Je remercie également mon frère, Léo Blondel, pour sa curiosité infinie. Ses connaissances techniques en IA et sa pédagogie m’ont permis de comprendre de nombreux aspects difficiles d’accès, et il suit mon parcours artistique et théorique avec un intérêt toujours stimulant.</p>
+        <p>Enfin, je remercie sincèrement celles et ceux que l’on appelle la «&#8239;génération&nbsp;Z&#8239;»&#8239;: à travers vos luttes, partout dans le monde, vous m’avez redonné l’espoir d’une révolution possible. Merci d’être radicales et radicaux dans votre joie comme dans vos actions.</p>
+        <p class="merci__envoi">Ensemble, faisons vaciller le technofascisme.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <main id="contenu">
 
